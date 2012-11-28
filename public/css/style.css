@@ -319,6 +319,11 @@ h2
 	width:185px;
 	height:25px;
 	border:#D6D3D3 1px solid;
+	font-family:"Pontano Sans";
+	color:#454445;
+	text-indent:4px;
+	font-size:13px;
+	font-weight:bold;
 	border-radius:5px;
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
