@@ -14,7 +14,6 @@ class IndexController extends Zend_Controller_Action
         $form = new Application_Form_Signup();
         $this->view->form = $form;
 
-
      if ($this->getRequest()->isPost() && $this->view->form->isValid($this->_getAllParams()))
         {
           
@@ -29,17 +28,18 @@ class IndexController extends Zend_Controller_Action
                         if(empty($mail))//if the emailId entered in Signup form is unique
                         {
                         
-                          //inserting data in "users" table 
+                        //  inserting data in "user" table 
                           $u_data = array(
                                 'fullname'   =>    $form->getValue('fullname'),
                                 'email'      =>    $form->getValue('email'),
                                 'password'   =>    $password =  md5( rand(0,1000) ),
                                 'zipcode'    =>    $form->getValue('zipcode'),
+                                'status'	 =>	   '0'
                                          ); 
 
                            $user->insert($u_data);
 
-                            //after insertion send a confirmation email to the user with an activation link
+                             //after insertion send a confirmation email to the user with an activation link
                             $smtpServer = 'smtp.gmail.com';
                             $username = 'habibsehrish@gmail.com';
                             $Password = 'h8lovestory';
@@ -57,7 +57,7 @@ class IndexController extends Zend_Controller_Action
                                     Your Account has been created.
                                     Please click this link to activate your account:
 
-                                    http://comtestfront/activate/email/'.$u_data['email'].'/password/'.$password.'
+                                    http://comtestfront/index/activate/email/'.$u_data['email'].'/password/'.$password.'
 
              
                                     ';
@@ -68,7 +68,7 @@ class IndexController extends Zend_Controller_Action
                             $mail->setFrom('habibsehrish@gmail.com', 'Sehrish');
                             $mail->send($transport);  
                         }
-                           }
+                        //    }
 
                            
                        else
