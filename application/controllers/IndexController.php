@@ -29,7 +29,7 @@ class IndexController extends Zend_Controller_Action
                           $u_data = array(
                                 'fullname'   =>    $form->getValue('fullname'),
                                 'email'      =>    $form->getValue('email'),
-                                'password'   =>    $password =  md5( rand(0,1000) ),
+                                'password'   =>    sha1($form->getValue('password')),
                                 'zipcode'    =>    $form->getValue('zipcode'),
                                 'status'	 =>	   '0'
                                          ); 
