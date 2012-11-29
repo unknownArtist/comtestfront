@@ -12,13 +12,16 @@ class Application_Form_Signup extends Zend_Form
         $fullname->setRequired(TRUE);
 
         $email = new Zend_Form_Element_Text('email');
-        $email->setRequired(TRUE);
+        $email->addValidator('EmailAddress')
+              ->setRequired(TRUE);
 
         $password = new Zend_Form_Element_Password('password');
         $password->setRequired(TRUE);
 
         $zipcode = new Zend_Form_Element_Text('zipcode');
         $zipcode->setRequired(TRUE);
+
+         $newsletter = new Zend_Form_Element_Checkbox('newsletter');
 
          $submit = new Zend_Form_Element_Submit('submit');
 
@@ -28,6 +31,7 @@ class Application_Form_Signup extends Zend_Form
             $email,
             $password,
             $zipcode,
+            $newsletter,
             $submit
 
             ));

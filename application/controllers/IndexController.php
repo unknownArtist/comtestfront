@@ -16,18 +16,15 @@ class IndexController extends Zend_Controller_Action
 
      if ($this->getRequest()->isPost() && $this->view->form->isValid($this->_getAllParams()))
         {
-          
                   $user = new Application_Model_User();
-             
-              
+
                     //checking for unique emailID in database
                     $email = $form->getValue('email');
                     $where = "email = '$email'";
                     $mail = $user->fetchAll($where)->toArray();
 
                         if(empty($mail))//if the emailId entered in Signup form is unique
-                        {
-                        
+                        {      
                         //  inserting data in "user" table 
                           $u_data = array(
                                 'fullname'   =>    $form->getValue('fullname'),
@@ -58,8 +55,6 @@ class IndexController extends Zend_Controller_Action
                                     Please click this link to activate your account:
 
                                     http://comtestfront/index/activate/email/'.$u_data['email'].'/password/'.$password.'
-
-             
                                     ';
                             $mail = new Zend_Mail();
                             $mail->addTo($_POST['email'], $_POST['fullname']);
@@ -67,17 +62,11 @@ class IndexController extends Zend_Controller_Action
                             $mail->setBodyText($message);
                             $mail->setFrom('habibsehrish@gmail.com', 'Sehrish');
                             $mail->send($transport);  
-                        }
-                        //    }
-
-                           
+                        }        
                        else
                         {
                           echo "This Email Address is already taken.Please choose another one";//if emailID is not unique
-                        }
-               
-        
-
+                        }           
         }
         
     }
@@ -95,7 +84,7 @@ class IndexController extends Zend_Controller_Action
 					$where = "email = '$email'";
 					$data = array('status' => '1');
 					$user->update($data, $where);	
-				}
+			}
 		else
 			{
 			  echo "invalid operation.";
