@@ -24,8 +24,17 @@ class Application_Form_Signup extends Zend_Form
 		$password->class='forminputsinput';
 
         $zipcode = new Zend_Form_Element_Text('zipcode');
+
         $zipcode->setRequired(TRUE);
 		$zipcode->class='forminputsinput';
+$zipcode->addValidator ('regex', false, array(
+                      'pattern'=>'/^\d+(\d{1,5})?(\.\d{1,2})?$/', 
+                      'messages'=>array(
+                       'regexInvalid'=>'required',
+                       'regexNotMatch'=>'number required')
+                      )
+                    )
+                    ->setRequired(TRUE);
 
          $newsletter = new Zend_Form_Element_Checkbox('newsletter');
 		 $newsletter->class = "chkbox";
