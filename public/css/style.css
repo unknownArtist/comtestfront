@@ -22,14 +22,14 @@ header
 {
 	width:400px;
 	float:left;
-	margin-left:5px;
+	margin-left:10px;
 }
 
 .logo h2
 {
 	color:#81B726;
 	font-size:31px;
-	font-weight:normal;
+	font-weight:bold;
 	padding-top:0px;
 	float:left;
 	font-family:"Pontano Sans";
@@ -44,7 +44,7 @@ header
 {
 	color:#FFFFFF;
 	float:left;
-	margin:59px 0 0 -116px;
+	margin:59px 0 0 -124px;
 }
 
 .headnav
@@ -302,7 +302,7 @@ h2
 	font-family:arial;
 	font-weight:bold;
 	margin-left:10px;
-	line-height:43px;
+	line-height:46px;
 	
 }
 
@@ -311,10 +311,10 @@ h2
 	width:210px;
 	height:200px;
 	float:left;
-	margin-top:-10px;
+	margin:-19px 0 0 -25px;
 }
 
-.forminputs input
+.forminputsinput
 {
 	width:185px;
 	height:25px;
@@ -327,37 +327,35 @@ h2
 	border-radius:5px;
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
-	margin:15px 0 0 8px;
 }
 
 .chkbox
 {
-	float:left;
-	margin-left:5px;
+	width:20px;
+	margin:30px 0 0 -111px;
 }
 
-.chkbox p
+.chkboxp p
 {
 	color:#454445;
 	font-size:13px;
 	font-family:arial;
 	font-weight:bold;
-	margin:-18px 0 0 20px;
+	margin:17px 0 0 25px;
+	float:left;
 }
 
-.chkbox button
+.chkboxbutton
 {
-	background:url(../images/btnbg.png) repeat;
+	background:url(../images/earnmoney.png) no-repeat center;
 	height:43px;
 	width:150px;
-	color:#FFFFFF;
-	margin:30px 0 0 12px;
-	font-size:18px;
-	border:#DB6218 1px solid;
-	border-radius:5px;
-	-moz-border-radius:5px;
-	-webkit-border-radius:5px;
+	float:left;
 	cursor:pointer;
+	color:#F60;
+	text-align:right;
+	border:none;
+	margin:25px 0 0 -105px;
 }
 
 .tempbox
@@ -480,6 +478,7 @@ h2
 	margin:36px 0 0 80px;
 	line-height:32px;
 	text-align:center;
+	font-weight:bold;
 }
 
 .giftsimg p span
@@ -745,4 +744,15 @@ footer
 	text-decoration:none;
 	color:#FFFFFF;
 	margin-left:5px;	
+}
+
+.errors li
+{
+	width:190px;
+	margin-top:-37px;
+	margin-left:-20px;
+	clear:right;
+	font-size:10px;
+	height:15px;
+	color:#F00;
 }
