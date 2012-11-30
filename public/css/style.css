@@ -756,3 +756,90 @@ footer
 	height:15px;
 	color:#F00;
 }
+
+#contentlogin
+{
+	background:#FFFFFF;
+	width:1024px;
+	height:484px;
+	margin:10px auto 0 auto;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+
+.loginbg
+{
+	/* IE10 Consumer Preview */ 
+background-image: -ms-linear-gradient(top, #D4E249 0%, #7FA004 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(top, #D4E249 0%, #7FA004 100%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(top, #D4E249 0%, #7FA004 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #D4E249), color-stop(1, #7FA004));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(top, #D4E249 0%, #7FA004 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to bottom, #D4E249 0%, #7FA004 100%);
+
+	height:509px;
+	background-color:#B0C718;
+}
+
+.logininputs
+{
+	margin-top:93px;
+}
+
+.loginlabels
+{
+	width:120px;
+	height:200px;
+	float:left;
+	margin-left:350px;
+	margin-top:100px;
+	margin-right:10px;
+	text-align:right;	
+}
+
+.loginlabels label
+{
+	color:#454445;
+	font-size:13px;
+	font-family:arial;
+	font-weight:bold;
+	line-height:46px;
+		
+}
+
+.loginbutton
+{
+	background:url(../images/btnbg.png) repeat;
+	height:30px;
+	width:50px;
+	cursor:pointer;
+	color:#FFFFFF;
+	font-family:"Pontano Sans";
+	font-size:16px;
+	margin-left:135px;
+	border:#C60 1px solid;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+
+.logina
+{
+	margin-top:-45px;
+}
+
+.logina a
+{
+	color:#F00;
+}
