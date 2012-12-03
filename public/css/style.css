@@ -749,10 +749,9 @@ footer
 .errors li
 {
 	width:190px;
-	margin-top:-37px;
-	margin-left:-20px;
+	margin:-38px 0 0 170px;
 	clear:right;
-	font-size:10px;
+	font-size:12px;
 	height:15px;
 	color:#F00;
 }
