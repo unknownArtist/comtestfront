@@ -129,12 +129,18 @@ header
 	display:inline;
 }
 
-.mainnav nav a
+.mainnav nav a:link, .mainnav nav a:visited
 {
 	text-decoration:none;
 	color:#FFFFFF;
 	margin-left:20px;
 	font-size:13px;
+}
+
+.mainnav nav a:hover, .mainnav nav a:active,
+.mainnav nav .active a:link, .mainnav nav .active a:visited
+{
+	color:#81B726;
 }
 
 section
