@@ -22,14 +22,14 @@ header
 {
 	width:400px;
 	float:left;
-	margin-left:5px;
+	margin-left:10px;
 }
 
 .logo h2
 {
 	color:#81B726;
 	font-size:31px;
-	font-weight:normal;
+	font-weight:bold;
 	padding-top:0px;
 	float:left;
 	font-family:"Pontano Sans";
@@ -44,7 +44,7 @@ header
 {
 	color:#FFFFFF;
 	float:left;
-	margin:59px 0 0 -116px;
+	margin:59px 0 0 -124px;
 }
 
 .headnav
@@ -111,7 +111,7 @@ header
 {
 	float:right;
 	width:450px;
-	margin-right:-15px;
+	margin-right:13px;
 }
 
 .mainnav nav ul
@@ -129,11 +129,18 @@ header
 	display:inline;
 }
 
-.mainnav nav a
+.mainnav nav a:link, .mainnav nav a:visited
 {
 	text-decoration:none;
 	color:#FFFFFF;
 	margin-left:20px;
+	font-size:13px;
+}
+
+.mainnav nav a:hover, .mainnav nav a:active,
+.mainnav nav .active a:link, .mainnav nav .active a:visited
+{
+	color:#81B726;
 }
 
 section
@@ -302,7 +309,7 @@ h2
 	font-family:arial;
 	font-weight:bold;
 	margin-left:10px;
-	line-height:43px;
+	line-height:46px;
 	
 }
 
@@ -311,10 +318,10 @@ h2
 	width:210px;
 	height:200px;
 	float:left;
-	margin-top:-10px;
+	margin:-19px 0 0 -25px;
 }
 
-.forminputs input
+.forminputsinput
 {
 	width:185px;
 	height:25px;
@@ -327,37 +334,35 @@ h2
 	border-radius:5px;
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
-	margin:15px 0 0 8px;
 }
 
 .chkbox
 {
-	float:left;
-	margin-left:5px;
+	width:20px;
+	margin:30px 0 0 -111px;
 }
 
-.chkbox p
+.chkboxp p
 {
 	color:#454445;
 	font-size:13px;
 	font-family:arial;
 	font-weight:bold;
-	margin:-18px 0 0 20px;
+	margin:17px 0 0 25px;
+	float:left;
 }
 
-.chkbox button
+.chkboxbutton
 {
-	background:url(../images/btnbg.png) repeat;
+	background:url(../images/earnmoney.png) no-repeat center;
 	height:43px;
 	width:150px;
-	color:#FFFFFF;
-	margin:30px 0 0 12px;
-	font-size:18px;
-	border:#DB6218 1px solid;
-	border-radius:5px;
-	-moz-border-radius:5px;
-	-webkit-border-radius:5px;
+	float:left;
 	cursor:pointer;
+	color:#F60;
+	text-align:right;
+	border:none;
+	margin:25px 0 0 -105px;
 }
 
 .tempbox
@@ -403,9 +408,10 @@ h2
 	margin:35px 0 0 137px;
 }
 
-.humanimg p span
+.humanimg a
 {
 	color:#FFFFFF;
+	text-decoration:none;
 }
 
 .coinsimg
@@ -440,13 +446,14 @@ h2
 	font-style:italic;
 }
 
-.coinsimg p span
+.coinsimg a
 {
 	color:#FFFFFF;
 	font-style:normal;
 	font-size:25px;
 	font-style:italic;
 	font-weight:normal;
+	text-decoration:none;
 }
 
 .giftsimg
@@ -480,14 +487,16 @@ h2
 	margin:36px 0 0 80px;
 	line-height:32px;
 	text-align:center;
+	font-weight:bold;
 }
 
-.giftsimg p span
+.giftsimg a
 {
 	color:#218ED5;
 	font-style:italic;
 	font-family:vijaya;
 	font-weight:600;
+	text-decoration:none;
 	font-size:41px;
 	line-height:20px;
 	margin-right:25px;
@@ -717,11 +726,17 @@ footer
 	display:inline;
 }
 
-.copyright nav a
+.copyright nav a:link, .copyright nav a:visited
 {
 	text-decoration:none;
 	color:#FFFFFF;
 	height:10px;	
+}
+
+.copyright nav a:hover, .copyright nav a:active,
+.copyright nav .active a:link, .copyright nav .active a:visited
+{
+	color:#81B726;
 }
 
 .footernav nav
@@ -740,9 +755,115 @@ footer
 	display:inline;
 }
 
-.footernav nav a
+.footernav nav a:link, .footernav nav a:visited
 {
 	text-decoration:none;
 	color:#FFFFFF;
 	margin-left:5px;	
+}
+
+.footernav nav a:hover, .footernav nav a:active,
+.footernav nav .active a:link, .footernav nav .active a:visited
+{
+	color:#81B726;
+}
+
+.errors li
+{
+	width:190px;
+	margin:-38px 0 0 170px;
+	clear:right;
+	font-size:12px;
+	height:15px;
+	color:#F00;
+}
+
+#contentlogin
+{
+	background:#FFFFFF;
+	width:1024px;
+	height:484px;
+	margin:10px auto 0 auto;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+
+.loginbg
+{
+	/* IE10 Consumer Preview */ 
+background-image: -ms-linear-gradient(top, #D4E249 0%, #7FA004 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(top, #D4E249 0%, #7FA004 100%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(top, #D4E249 0%, #7FA004 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #D4E249), color-stop(1, #7FA004));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(top, #D4E249 0%, #7FA004 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to bottom, #D4E249 0%, #7FA004 100%);
+
+	height:509px;
+	background-color:#B0C718;
+}
+
+.logininputs
+{
+	margin-top:80px;
+	width:300px;
+	float:left;
+}
+
+.loginlabels
+{
+	width:120px;
+	height:200px;
+	float:left;
+	margin-left:350px;
+	margin-top:101px;
+	text-align:right;	
+}
+
+.loginlabels label
+{
+	color:#454445;
+	font-size:13px;
+	font-family:arial;
+	font-weight:bold;
+	line-height:45px;
+		
+}
+
+.loginbutton
+{
+	background:url(../images/btnbg.png) repeat;
+	height:30px;
+	width:50px;
+	cursor:pointer;
+	color:#FFFFFF;
+	font-family:"Pontano Sans";
+	font-size:16px;
+	margin-left:135px;
+	border:#C60 1px solid;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+
+.logina
+{
+	margin-top:-40px;
+	margin-left:45px;
+}
+
+.logina a
+{
+	color:#F00;
+	font-size:14px;
 }

@@ -9,14 +9,15 @@ class Application_Form_Login extends Zend_Form
         $this->setAction('');
 
         $loginname = new Zend_Form_Element_Text('email');
-        $loginname->setLabel('Enter your Email')
-             ->setRequired(TRUE);
+        $loginname->setRequired(TRUE);
+		$loginname->class='forminputsinput';
 
        $password = new Zend_Form_Element_Password('password');
-       $password->setLabel('Password')
-             ->setRequired(TRUE);
+       $password->setRequired(TRUE);
+	   $password->class='forminputsinput';
              
         $submitlogin = new Zend_Form_Element_Submit('login');
+		$submitlogin->class='loginbutton';
 
         $this->addElements(array(
 
