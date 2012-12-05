@@ -2,10 +2,12 @@
 
 class UserController extends Zend_Controller_Action
 {
+       
 
     public function init()
     {
         /* Initialize action controller here */
+      
     }
 
     public function indexAction()
@@ -96,5 +98,33 @@ class UserController extends Zend_Controller_Action
         Zend_Auth::getInstance()->clearIdentity();
         //$this->_redirect('login');
     }
+
+//public function facebookAction() {
+// require 'facebook-platform/src/facebook.php';
+
+// $facebook = new Facebook(array(
+//   'appId'  => '420544178018982',
+//   'secret' => '6e9e7f7529fab17ac8373a45b9b7865d',
+// ));
+
+// // Get User ID
+// $user = $facebook->getUser();
+// $this->view->user = $user;
+// if ($user) {
+//   try {
+//     // Proceed knowing you have a logged in user who's authenticated.
+//     $user_profile = $facebook->api('/me');
+//   } catch (FacebookApiException $e) {
+//     error_log($e);
+//     $user = null;
+//   }
+// }
+
+// if ($user) {
+//   $logoutUrl = $facebook->getLogoutUrl();
+// } else {
+//   $loginUrl = $facebook->getLoginUrl();
+// }
+//}
 }
 
